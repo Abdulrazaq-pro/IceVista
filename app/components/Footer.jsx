@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
     return (
       <div id="footer" className=" grid grid-cols-2 md:grid-cols-5 md:px-8 px-4 py-5 gap-4 text-[hsl(254,15%,34%)]  text-xs">
