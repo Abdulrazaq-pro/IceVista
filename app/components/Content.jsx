@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const Content = () => {
@@ -12,19 +13,20 @@ const Content = () => {
         </div>
         <div className="flex justify-around items-center gap-8">
           <div>
-            <img src="/images/trivago.png" alt="" />
+           
+            <Image src="/images/trivago.png" alt="" />
           </div>
           <div>
-            <img src="/images/headspace.png" alt="" />
+            <Image src="/images/headspace.png" alt="" />
           </div>
           <div>
-            <img src="/images/bausch.png" alt="" />
+            <Image src="/images/bausch.png" alt="" />
           </div>
           <div>
-            <img src="/images/mil.png" alt="" />
+            <Image src="/images/mil.png" alt="" />
           </div>
           <div>
-            <img src="/images/toyota.png" alt="" />
+            <Image src="/images/toyota.png" alt="" />
           </div>
         </div>
       </div>
@@ -32,12 +34,12 @@ const Content = () => {
   };
 
   const Business = () => {
-    const Cards = ({ header, text, link, img }) => {
+    const Cards = ({ header, text, link, Image }) => {
       return (
         <div className="px-4 rounded-md overflow-hidden  border border-[#443674] space-y-1 pb-4 ">
           <br />
           <div>
-            <img className="w-7" src={img} alt="" />
+            <Image className="w-7" src={Image} alt="" />
           </div>
           <p className="font-semibold max-md:text-sm">{header}</p>
           <p className=" max-w-[150px] text-xs md:text-sm max-md:leading-4 ">
@@ -73,22 +75,22 @@ const Content = () => {
         </div>
         <div className=" md:flex md:justify-center grid grid-cols-2 gap-5 ">
           <Cards
-            img="/images/new.png"
+            Image="/images/new.png"
             header="Increased Efficiency"
             text={`Seamlessly manage your tasks and projects, saving you valuable time.`}
           />
           <Cards
-            img="/images/new.png"
+            Image="/images/new.png"
             header="Increased Efficiency"
             text="Seamlessly manage your tasks and projects, saving you valuable time."
           />
           <Cards
-            img="/images/new.png"
+            Image="/images/new.png"
             header="Increased Efficiency"
             text="Seamlessly manage your tasks and projects, saving you valuable time."
           />
           <Cards
-            img="/images/new.png"
+            Image="/images/new.png"
             header="Increased Efficiency"
             text="Seamlessly manage your tasks and projects, saving you valuable time."
           />
@@ -98,7 +100,7 @@ const Content = () => {
   };
 
   const Paparazi = () => {
-    const Demo = ({ header, text, img, change }) => {
+    const Demo = ({ header, text, imgg, change }) => {
       return (
         <div
           className={`grid  grid-cols-2 md:gap-5 items-center bg-blue_3 p-8 gap-3 `}
@@ -115,7 +117,7 @@ const Content = () => {
             </button>
           </div>
           <div className="">
-            <img className="md:scale-75" src={img} alt="" />
+            <Image className="md:scale-75" src={imgg} alt="" />
           </div>
         </div>
       );
@@ -125,18 +127,18 @@ const Content = () => {
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
-          img="/images/png1.png"
+          imgg="/images/png1.png"
         />
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
           change="true"
-          img="/images/cct2.png"
+          imgg="/images/cct2.png"
         />
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
-          img="/images/CCT Card.png"
+          imgg="/images/CCT Card.png"
         />
       </div>
     );
@@ -171,7 +173,7 @@ const Content = () => {
           <div className="px-3 md:text-sm flex justify-center ">
             <div className="text-left space-y-1">
               <div className="">
-                <img
+                <Image
                   className="w-[15px] inline  mr-2"
                   src={`${
                     opp ? "/images/hero1.png" : "/images/icons/check.png"
@@ -181,7 +183,7 @@ const Content = () => {
                 <span className="inline">{text1}</span>
               </div>
               <div className="">
-                <img
+                <Image
                   className="w-[15px] inline  mr-2"
                   src={`${
                     opp ? "/images/hero1.png" : "/images/icons/check.png"
@@ -191,7 +193,7 @@ const Content = () => {
                 <span className="inline">{text2}</span>
               </div>
               <div className="">
-                <img
+                <Image
                   className="w-[15px] inline  mr-2"
                   src={`${
                     opp ? "/images/hero1.png" : "/images/icons/check.png"
@@ -201,7 +203,7 @@ const Content = () => {
                 <span className="inline">{text3}</span>
               </div>
               <div className="flex items-center">
-                <img
+                <Image
                   className="w-[15px] inline  mr-2"
                   src={`${
                     opp ? "/images/hero1.png" : "/images/icons/check.png"
@@ -211,7 +213,7 @@ const Content = () => {
                 <span className="inline">{text4}</span>
               </div>
               <div className="">
-                <img
+                <Image
                   className="w-[15px] inline mr-2"
                   src={`${
                     opp ? "/images/hero1.png" : "/images/icons/check.png"
@@ -244,7 +246,7 @@ const Content = () => {
           <div className="flex gap-3 justify-center items-center">
             <p>Monthly</p>
             <div className="relative scale-75 cursor-pointer">
-              <img src="/images/Frame 75.png" alt="" />
+              <Image src="/images/Frame 75.png" alt="" />
               <div
                 className={` ${
                   switcher && "switcher"
@@ -253,7 +255,7 @@ const Content = () => {
                   setSwitcher(!switcher);
                 }}
               >
-                <img src="/images/ellipse.png" alt="" />
+                <Image src="/images/ellipse.png" alt="" />
               </div>
             </div>
             <p>Anually</p>
@@ -331,12 +333,12 @@ const Content = () => {
   };
 
   const Client_Section = () => {
-    const Client_Card = ({ name, handle, text, img }) => {
+    const Client_Card = ({ name, handle, text, imgg }) => {
       return (
         <div className="py-3 px-2 space-x-3 border border-zinc-700 rounded-lg bg-blue_2">
           <div className="flex gap-2">
             <div>
-              <img src={img} alt="" />
+              <Image src={imgg} alt="" />
             </div>
             <div className="space-y-1">
               <p className="font-semibold">{name}</p>
@@ -417,11 +419,11 @@ const Content = () => {
             <h1 className="cursor-pointer">{header}</h1>
             {open ? (
               <div>
-                <img className="w-4" src="/images/icons/remove.png" />
+                <Image className="w-4" src="/images/icons/remove.png" />
               </div>
             ) : (
               <div>
-                <img className="w-4" src="/images/icons/plus.png" />
+                <Image className="w-4" src="/images/icons/plus.png" />
               </div>
             )}
           </div>

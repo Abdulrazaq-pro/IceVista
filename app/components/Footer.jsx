@@ -44,13 +44,13 @@ const Footer = () => {
         <div className=" space-y-2 md:text-right">
           <div className="flex md:justify-end items-center gap-2">
             <div>
-              <img className="w-[15px]" src="/images/icons/twitter.svg" alt="" />
+              <Image className="w-[15px]" src="/images/icons/twitter.svg" alt="" />
             </div>
             <div>
-              <img className="w-[15px]" src="/images/icons/instagram.svg" alt="" />
+              <Image className="w-[15px]" src="/images/icons/instagram.svg" alt="" />
             </div>
             <div>
-              <img className="w-[15px]" src="/images/icons/linkedin.svg" alt="" />
+              <Image className="w-[15px]" src="/images/icons/linkedin.svg" alt="" />
             </div>
           </div>
           <p className="">Privacy Policy</p>
