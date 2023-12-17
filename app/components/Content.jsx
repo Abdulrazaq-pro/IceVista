@@ -443,7 +443,7 @@ const Content = () => {
           </p>
           <div className=" space-y-3">
             {items.map((item) => (
-              <Accordion header={item.header} content={item.content} />
+              <Accordion key={item.id} header={item.header} content={item.content} />
             ))}
           </div>
         </div>

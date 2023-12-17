@@ -2,7 +2,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 
-const First_Page = ({}) => {
+const First_Page = () => {
 
   return (
     <div className="min-h-screen flex flex-col">

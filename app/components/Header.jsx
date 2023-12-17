@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+  console.log(getComputedStyle(document.body).fontFamily);
   return (
     <div className="px-6 py-2 flex justify-between  items-center sticky top-0 left-0 bg-blue_3 z-[999]" >
       <a className="text-lg" href="/">Ice<span className="text-purple_2">Vista</span></a>

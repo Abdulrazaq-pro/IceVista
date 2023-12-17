@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.ttf);
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 .opener {
   max-height: 50px !important;
@@ -36,6 +44,6 @@ li {
   cursor: pointer;
 }
 
-#footer > div p:hover{
+#footer > div p:hover {
   color: rgb(118, 118, 136);
 }
