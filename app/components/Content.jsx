@@ -315,7 +315,7 @@ const Content = () => {
             <div className="p-2 border-solid border-r-[1px] border-r-blue_1 space-y-4 py-6">
               <p className="font-semibold">Robust Features</p>
               <p className="text-xs">
-                From task management to detailed analytics, we've got you
+                From task management to detailed analytics, weve got you
                 covered.
               </p>
             </div>
@@ -359,17 +359,17 @@ const Content = () => {
           <Client_Card
             name="Sarah Thompson"
             handle="@sarahthompsy3"
-            text='"IceVista has been a game-changer for our marketing team. The Pro plan offers everything we need, and the reporting features are outstanding. Highly recommended!"'
+            text="IceVista has been a game-changer for our marketing team. The Pro plan offers everything we need, and the reporting features are outstanding. Highly recommended!"
           />
           <Client_Card
             name="Sarah Thompson"
             handle="@sarahthompsy3"
-            text='"IceVista has been a game-changer for our marketing team. The Pro plan offers everything we need, and the reporting features are outstanding. Highly recommended!"'
+            text="IceVista has been a game-changer for our marketing team. The Pro plan offers everything we need, and the reporting features are outstanding. Highly recommended!"
           />
           <Client_Card
             name="Sarah Thompson"
             handle="@sarahthompsy3"
-            text='"IceVista has been a game-changer for our marketing team. The Pro plan offers everything we need, and the reporting features are outstanding. Highly recommended!"'
+            text="IceVista has been a game-changer for our marketing team. The Pro plan offers everything we need, and the reporting features are outstanding. Highly recommended!"
           />
         </div>
       </div>

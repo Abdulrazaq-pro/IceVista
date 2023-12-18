@@ -1,6 +1,6 @@
 import Content from "./components/Content";
 import First_Page from "./components/First_Page";
-import Footer from "./components/Footer";
+import Footer from "./components/Footers";
 
 export default function Home() {
   return (
