@@ -38,7 +38,7 @@ li {
   cursor: pointer;
 }
 .navigation li:hover{
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #8A28C8;
 }
 
 #footer > div p {

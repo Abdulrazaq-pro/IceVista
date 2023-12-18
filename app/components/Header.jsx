@@ -58,7 +58,7 @@ const Header = () => {
       <div
         className={`fixed bg-white text-black w-[90%] left-[50%] top-14   py-7 px-5 text-2xl rounded-3xl z-[999] ${
           nav ? "translate-x-[-50%] " : "translate-x-[80%]"
-        } ease-in-out transition text-[#e7ebe7]   bg-zinc-800`}
+        } ease-in-out transition text-white bg-zinc-800`}
       >
         <ul className="m-auto space-y-3 navigation">
           <li>
