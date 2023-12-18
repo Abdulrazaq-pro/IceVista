@@ -7,7 +7,10 @@ const Content = () => {
     console.log("working");
 
     return (
-      <div className=" justify-around px-6 py-4 space-y-2 bg-purple_1">
+      <div
+        className=" justify-around px-6 py-4 space-y-2 bg-purple_1"
+        id="brand"
+      >
         <div className="text-center text-black font-semibold">
           Trusted by big companies like
         </div>
@@ -35,7 +38,7 @@ const Content = () => {
   const Business = () => {
     const Cards = ({ header, text, link, img }) => {
       return (
-        <div className="px-4 rounded-md overflow-hidden  border border-[#443674] space-y-1 pb-4  ">
+        <div className="px-4 rounded-md overflow-hidden  border border-[#443674] space-y-1 pb-4">
           <br />
           <div>
             <img className="w-7" src={img} alt="" />
@@ -51,7 +54,10 @@ const Content = () => {
       );
     };
     return (
-      <div className="py-10 px-5 bg-gradient-to-tr from-blue_3 to-blue_2 space-y-6">
+      <div
+        className="py-10 px-5 bg-gradient-to-tr from-blue_3 to-blue_2 space-y-6"
+        id="business"
+      >
         <div className="md:flex  justify-between items-center mb-20">
           <div className="max-md:text-center gap-3">
             <p className="text-2xl font-semibold ">
@@ -122,7 +128,7 @@ const Content = () => {
       );
     };
     return (
-      <div className="space-y-1 my-3">
+      <div className="space-y-1 my-3" id="paparazi">
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
@@ -235,7 +241,7 @@ const Content = () => {
       );
     };
     return (
-      <div className="px-5 py-12 bg-blue_2 text-black ">
+      <div className="px-5 py-12 bg-blue_2 text-black " id="pricing">
         <div className="text-center text-white">
           <p className="text-2xl">Our pricing</p>
           <p>
@@ -302,7 +308,7 @@ const Content = () => {
 
   const Offer = () => {
     return (
-      <div className="bg-purple_1 text-black px-14 py-14 text-center ">
+      <div className="bg-purple_1 text-black px-14 py-14 text-center " id="offer">
         <div className=" md:w-[70%] w-[95%] m-auto space-y-5 ">
           <div className="font-semibold text-center"> What we Offer:</div>
           <div className=" grid grid-cols-3  border-solid border-b-[1px] border-b-blue_1">
@@ -334,7 +340,7 @@ const Content = () => {
   const Client_Section = () => {
     const Client_Card = ({ name, handle, text, img }) => {
       return (
-        <div className="py-3 px-2 space-x-3 border border-zinc-700 rounded-lg bg-blue_2">
+        <div className="py-3 px-2 space-x-3 border border-zinc-700 rounded-lg bg-blue_2" id="client_section">
           <div className="flex gap-2">
             <div>
               <img src={img} alt="" />
@@ -382,31 +388,31 @@ const Content = () => {
         header: "What is IceVista and what does it offer?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
-          id:1,
+        id: 1,
       },
       {
         header: "How does the free trial work, and what features are included?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
-          id:2,
+        id: 2,
       },
       {
         header: "Is my data secure with IceVista?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
-          id:3,
+        id: 3,
       },
       {
         header: "Can IceVista be integrated with other tools and software?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
-          id:4,
+        id: 4,
       },
       {
         header: "How does billing work, and what payment methods are accepted?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
-          id:5,
+        id: 5,
       },
     ];
     const Accordion = ({ header, content }) => {
@@ -423,7 +429,7 @@ const Content = () => {
             <h1 className="cursor-pointer">{header}</h1>
             {open ? (
               <div>
-                <img className="w-4" src="/images/icons/remove.png" alt=""/>
+                <img className="w-4" src="/images/icons/remove.png" alt="" />
               </div>
             ) : (
               <div>
@@ -438,7 +444,7 @@ const Content = () => {
       );
     };
     return (
-      <div className="bg-purple_1 text-black px-12 py-6">
+      <div className="bg-purple_1 text-black px-12 py-6" id="faqs">
         <div className="md:w-[80%] mx-auto">
           <h1 className="text-2xl text-center font-semibold">
             Frequently Asked Questions

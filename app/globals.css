@@ -37,6 +37,9 @@ color: white;
 li {
   cursor: pointer;
 }
+.navigation li:hover{
+  border-bottom: 2px solid purple;
+}
 
 #footer > div p {
   cursor: pointer;

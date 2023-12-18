@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
-    <div className="px-4">
+    <div className="px-4 pb-4">
       <div className="text-center  space-y-4 max-md:space-y-8">
-        <p className="text-5xl max-md:text-4xl max-md:-translate-y-9">
+        <p className="text-5xl max-md:-translate-y-9">
           Empowering your business <br />
           <span className="text-purple_2">simplifying</span> your success.
         </p>
