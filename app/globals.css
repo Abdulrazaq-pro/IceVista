@@ -25,10 +25,8 @@ body {
 .changer {
   background: blue;
   color: white;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 7 150 / var(--tw-bg-opacity));
+color: white;
+ background: #260796;
 }
 
 .opp_button {

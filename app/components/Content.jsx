@@ -13,20 +13,19 @@ const Content = () => {
         </div>
         <div className="flex justify-around items-center gap-8">
           <div>
-           
-            <Image src="/images/trivago.png" alt="" />
+            <img src="/images/trivago.png" alt="" />
           </div>
           <div>
-            <Image src="/images/headspace.png" alt="" />
+            <img src="/images/headspace.png" alt="" />
           </div>
           <div>
-            <Image src="/images/bausch.png" alt="" />
+            <img src="/images/bausch.png" alt="" />
           </div>
           <div>
-            <Image src="/images/mil.png" alt="" />
+            <img src="/images/mil.png" alt="" />
           </div>
           <div>
-            <Image src="/images/toyota.png" alt="" />
+            <img src="/images/toyota.png" alt="" />
           </div>
         </div>
       </div>
@@ -34,12 +33,12 @@ const Content = () => {
   };
 
   const Business = () => {
-    const Cards = ({ header, text, link, Image }) => {
+    const Cards = ({ header, text, link, img }) => {
       return (
-        <div className="px-4 rounded-md overflow-hidden  border border-[#443674] space-y-1 pb-4 ">
+        <div className="px-4 rounded-md overflow-hidden  border border-[#443674] space-y-1 pb-4  ">
           <br />
           <div>
-            <Image className="w-7" src={Image} alt="" />
+            <img className="w-7" src={img} alt="" />
           </div>
           <p className="font-semibold max-md:text-sm">{header}</p>
           <p className=" max-w-[150px] text-xs md:text-sm max-md:leading-4 ">
@@ -75,22 +74,22 @@ const Content = () => {
         </div>
         <div className=" md:flex md:justify-center grid grid-cols-2 gap-5 ">
           <Cards
-            Image="/images/new.png"
+            img="/images/new.png"
             header="Increased Efficiency"
             text={`Seamlessly manage your tasks and projects, saving you valuable time.`}
           />
           <Cards
-            Image="/images/new.png"
+            img="/images/new.png"
             header="Increased Efficiency"
             text="Seamlessly manage your tasks and projects, saving you valuable time."
           />
           <Cards
-            Image="/images/new.png"
+            img="/images/new.png"
             header="Increased Efficiency"
             text="Seamlessly manage your tasks and projects, saving you valuable time."
           />
           <Cards
-            Image="/images/new.png"
+            img="/images/new.png"
             header="Increased Efficiency"
             text="Seamlessly manage your tasks and projects, saving you valuable time."
           />
@@ -100,7 +99,7 @@ const Content = () => {
   };
 
   const Paparazi = () => {
-    const Demo = ({ header, text, imgg, change }) => {
+    const Demo = ({ header, text, img, change }) => {
       return (
         <div
           className={`grid  grid-cols-2 md:gap-5 items-center bg-blue_3 p-8 gap-3 `}
@@ -117,7 +116,7 @@ const Content = () => {
             </button>
           </div>
           <div className="">
-            <Image className="md:scale-75" src={imgg} alt="" />
+            <img className="md:scale-75" src={img} alt="" />
           </div>
         </div>
       );
@@ -127,18 +126,18 @@ const Content = () => {
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
-          imgg="/images/png1.png"
+          img="/images/png1.png"
         />
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
           change="true"
-          imgg="/images/cct2.png"
+          img="/images/cct2.png"
         />
         <Demo
           text="IceVista Project Management offers a seamless experience for planning, organizing, and collaborating on projects. From task management to progress tracking, it ensures your projects stay on schedule and within budget."
           header="Project Management Software:"
-          imgg="/images/CCT Card.png"
+          img="/images/CCT Card.png"
         />
       </div>
     );
@@ -161,7 +160,7 @@ const Content = () => {
     }) => {
       return (
         <div
-          className={`text-center px-3 py-4 space-y-2 rounded-2xl bg-white text-black ${
+          className={`text-center px-3 py-4 space-y-2 rounded-2xl bg-white shadow-[#3a2447] shadow-lg  text-black ${
             opp && "changer"
           }`}
         >
@@ -173,52 +172,52 @@ const Content = () => {
           <div className="px-3 md:text-sm flex justify-center ">
             <div className="text-left space-y-1">
               <div className="">
-                <Image
+                <img
                   className="w-[15px] inline  mr-2"
                   src={`${
-                    opp ? "/images/hero1.png" : "/images/icons/check.png"
+                    opp ? "/images/icons/check2.svg" : "/images/icons/check.png"
                   }`}
-                  alt=""
+                  alt="plus"
                 />
                 <span className="inline">{text1}</span>
               </div>
               <div className="">
-                <Image
+                <img
                   className="w-[15px] inline  mr-2"
                   src={`${
-                    opp ? "/images/hero1.png" : "/images/icons/check.png"
+                    opp ? "/images/icons/check2.svg" : "/images/icons/check.png"
                   }`}
                   alt=""
                 />
                 <span className="inline">{text2}</span>
               </div>
-              <div className="">
-                <Image
+              <div className="plus">
+                <img
                   className="w-[15px] inline  mr-2"
                   src={`${
-                    opp ? "/images/hero1.png" : "/images/icons/check.png"
+                    opp ? "/images/icons/check2.svg" : "/images/icons/check.png"
                   }`}
-                  alt=""
+                  alt="plus"
                 />
                 <span className="inline">{text3}</span>
               </div>
               <div className="flex items-center">
-                <Image
+                <img
                   className="w-[15px] inline  mr-2"
                   src={`${
-                    opp ? "/images/hero1.png" : "/images/icons/check.png"
+                    opp ? "/images/icons/check2.svg" : "/images/icons/check.png"
                   }`}
-                  alt=""
+                  alt="plus"
                 />
                 <span className="inline">{text4}</span>
               </div>
               <div className="">
-                <Image
+                <img
                   className="w-[15px] inline mr-2"
                   src={`${
-                    opp ? "/images/hero1.png" : "/images/icons/check.png"
+                    opp ? "/images/icons/check2.svg" : "/images/icons/check.png"
                   }`}
-                  alt=""
+                  alt="plus"
                 />
                 <span className="inline">{text5}</span>
               </div>
@@ -246,16 +245,16 @@ const Content = () => {
           <div className="flex gap-3 justify-center items-center">
             <p>Monthly</p>
             <div className="relative scale-75 cursor-pointer">
-              <Image src="/images/Frame 75.png" alt="" />
+              <img src="/images/Frame 75.png" alt="" />
               <div
                 className={` ${
                   switcher && "switcher"
-                } absolute inset-0 flex items-center float-right  mx-2 `}
+                } absolute inset-0 flex items-center float-right  mx-2 transition ease-in-out`}
                 onClick={() => {
                   setSwitcher(!switcher);
                 }}
               >
-                <Image src="/images/ellipse.png" alt="" />
+                <img src="/images/ellipse.png" alt="" />
               </div>
             </div>
             <p>Anually</p>
@@ -333,12 +332,12 @@ const Content = () => {
   };
 
   const Client_Section = () => {
-    const Client_Card = ({ name, handle, text, imgg }) => {
+    const Client_Card = ({ name, handle, text, img }) => {
       return (
         <div className="py-3 px-2 space-x-3 border border-zinc-700 rounded-lg bg-blue_2">
           <div className="flex gap-2">
             <div>
-              <Image src={imgg} alt="" />
+              <img src={img} alt="" />
             </div>
             <div className="space-y-1">
               <p className="font-semibold">{name}</p>
@@ -383,26 +382,31 @@ const Content = () => {
         header: "What is IceVista and what does it offer?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
+          id:1,
       },
       {
         header: "How does the free trial work, and what features are included?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
+          id:2,
       },
       {
         header: "Is my data secure with IceVista?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
+          id:3,
       },
       {
         header: "Can IceVista be integrated with other tools and software?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
+          id:4,
       },
       {
         header: "How does billing work, and what payment methods are accepted?",
         content:
           "IceVista is a powerful Software-as-a-Service (SaaS) solution designed to enhance business efficiency and productivity. It offers a comprehensive suite of project management tools, including task management, collaboration features, advanced reporting, and more.",
+          id:5,
       },
     ];
     const Accordion = ({ header, content }) => {
@@ -419,11 +423,11 @@ const Content = () => {
             <h1 className="cursor-pointer">{header}</h1>
             {open ? (
               <div>
-                <Image className="w-4" src="/images/icons/remove.png" />
+                <img className="w-4" src="/images/icons/remove.png" alt=""/>
               </div>
             ) : (
               <div>
-                <Image className="w-4" src="/images/icons/plus.png" />
+                <img className="w-4" src="/images/icons/plus.png" alt="" />
               </div>
             )}
           </div>
@@ -445,7 +449,9 @@ const Content = () => {
           </p>
           <div className=" space-y-3">
             {items.map((item) => (
-              <Accordion key={item.id} header={item.header} content={item.content} />
+              <div key={item.id}>
+                <Accordion header={item.header} content={item.content} />
+              </div>
             ))}
           </div>
         </div>
